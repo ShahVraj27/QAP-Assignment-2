@@ -15,8 +15,8 @@ m = 1, 2 and 3 counting qubits. Every result is explained from the math.
 | Implementation | completed `qpe_circuit`, both U^(2^k) methods, \|0...0> sanity check, n=2 m=2 diagram | done |
 | Part A | core grid n = 1..4, m = 1..3: predictions, 15 runs, histograms, P(y) comparison | done |
 | Part B | phase 1/3 with MCP(2π/3): 12 runs, error bound, n-comparison, \|1110> run | done |
-| Part C | non-eigenstates | to do |
-| Part D | broken circuits D1–D6 | to do |
+| Part C | non-eigenstates C1–C5: eigenstate decompositions, joint counting/target outcomes | done |
+| Part D | broken circuits D1–D6 and the D2+D3 combination, each explained | done |
 | Essay and PDF | inference essay, final PDF export | to do |
 
 ## Technologies
@@ -37,10 +37,13 @@ QAP-Assignment-2/
 │   ├── states.py             # state preparers: basis, |+>, |->, |++>
 │   ├── analysis.py           # exact probabilities, analytic P(y), tables
 │   ├── experiments.py        # Part A and Part B runners and result tables
+│   ├── part_c.py             # Part C: non-eigenstates, joint measurement
+│   ├── part_d.py             # Part D: broken-circuit variants D1–D6
 │   └── plotting.py           # side-by-side histograms
 ├── tests/
 │   ├── test_core.py          # sanity check, power-method equivalence, formula checks
-│   └── test_part_a_b.py      # Part A predictions/results, Part B error bound
+│   ├── test_part_a_b.py      # Part A predictions/results, Part B error bound
+│   └── test_part_c_d.py      # Part C distributions, Part D bug signatures
 ├── notebooks/
 │   └── Assignment2_QPE.ipynb # the graded notebook
 ├── results/

@@ -1,0 +1,6 @@
+Run,U,n,|v>,m,eigenstate of U?,"observed outcomes (measured, exact)"
+C1,X,1,|->,2,"yes, phi = 1/2",10: 1.000 (exact 1.000)
+C2,X,1,|+>,2,"yes, phi = 0",00: 1.000 (exact 1.000)
+C3,X,1,|0>,2,no,"00: 0.511 (exact 0.500), 10: 0.489 (exact 0.500)"
+C4,U2,2,|++>,2,no,"00: 0.259 (exact 0.250), 01: 0.245 (exact 0.250), 10: 0.252 (exact 0.250), 11: 0.244 (exact 0.250)"
+C5,U2,2,|++>,1,no,"0: 0.501 (exact 0.500), 1: 0.499 (exact 0.500)"

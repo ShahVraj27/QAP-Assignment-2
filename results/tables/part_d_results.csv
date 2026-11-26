@@ -1,0 +1,9 @@
+Run,change,most likely y (measured),P measured,exact distribution (nonzero)
+correct,"Correct circuit, |101>",101,1.0,101: 1.000
+D1,Every counting qubit controls U once,111,0.3711,"000: 0.003, 010: 0.018, 011: 0.364, 100: 0.018, 101: 0.125, 110: 0.107, 111: 0.364"
+D2,Swap gates removed from the inverse QFT,101,0.7163,"001: 0.125, 010: 0.037, 100: 0.073, 101: 0.729, 110: 0.037"
+D3,Counting qubit k controls U^(2^(m-1-k)),101,0.7271,"001: 0.125, 010: 0.037, 100: 0.073, 101: 0.729, 110: 0.037"
+D4,H gates on the counting qubits left out,000,0.1377,"000: 0.125, 001: 0.125, 010: 0.125, 011: 0.125, 100: 0.125, 101: 0.125, 110: 0.125, 111: 0.125"
+D5,Forward QFT instead of inverse QFT,011,1.0,011: 1.000
+D6,"|011> intended, X gates applied in reversed bit order",110,1.0,110: 1.000
+D2+D3,D2 and D3 combined (no swaps AND reversed powers),101,1.0,101: 1.000
