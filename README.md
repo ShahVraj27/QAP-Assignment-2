@@ -8,6 +8,8 @@ m = 1, 2 and 3 counting qubits. Every result is explained from the math.
 | Vraj Shah | 2023A7PS0478G |
 | Soumya Dedhia | 2023A7PS0381G |
 
+GitHub repository: https://github.com/ShahVraj27/QAP-Assignment-2
+
 ## Submission files
 
 | File | Contents |
@@ -128,5 +130,5 @@ The notebook writes its figures to `results/figures/` and its tables to `results
 | 2 | Soumya Dedhia | Part A and Part B |
 | 3 | Vraj Shah | Part C and Part D |
 | 4 | Soumya Dedhia | inference essay, final README, PDF export |
-
-The optional bonus (Section 13) was added after Commit 4.
+| 5 | Vraj Shah | optional bonus: A9 and A12 on a noisy fake backend |
+| 6 | Soumya Dedhia | bonus analysis with results, repository link, updated PDF |
