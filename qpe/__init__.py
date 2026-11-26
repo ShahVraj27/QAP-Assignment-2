@@ -21,6 +21,4 @@ from .analysis import (
     top_outcomes,
 )
 from .plotting import plot_side_by_side
-
-SHOTS = 2048
-SEED = 1234
+from .experiments import SEED, SHOTS

@@ -13,8 +13,8 @@ m = 1, 2 and 3 counting qubits. Every result is explained from the math.
 | Part | Contents | Status |
 |---|---|---|
 | Implementation | completed `qpe_circuit`, both U^(2^k) methods, \|0...0> sanity check, n=2 m=2 diagram | done |
-| Part A | core grid n = 1..4, m = 1..3 | to do |
-| Part B | phase 1/3 with MCP(2π/3) | to do |
+| Part A | core grid n = 1..4, m = 1..3: predictions, 15 runs, histograms, P(y) comparison | done |
+| Part B | phase 1/3 with MCP(2π/3): 12 runs, error bound, n-comparison, \|1110> run | done |
 | Part C | non-eigenstates | to do |
 | Part D | broken circuits D1–D6 | to do |
 | Essay and PDF | inference essay, final PDF export | to do |
@@ -36,9 +36,11 @@ QAP-Assignment-2/
 │   ├── oracles.py            # U_n, MCP(2π/3), X
 │   ├── states.py             # state preparers: basis, |+>, |->, |++>
 │   ├── analysis.py           # exact probabilities, analytic P(y), tables
+│   ├── experiments.py        # Part A and Part B runners and result tables
 │   └── plotting.py           # side-by-side histograms
 ├── tests/
-│   └── test_core.py          # sanity check, power-method equivalence, formula checks
+│   ├── test_core.py          # sanity check, power-method equivalence, formula checks
+│   └── test_part_a_b.py      # Part A predictions/results, Part B error bound
 ├── notebooks/
 │   └── Assignment2_QPE.ipynb # the graded notebook
 ├── results/

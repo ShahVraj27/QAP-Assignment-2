@@ -1,0 +1,2 @@
+Run,n,|v>,m,1st y,P(1st) measured,P(1st) exact,2nd y,P(2nd) measured,P(2nd) exact,phi_tilde (1st),|phi - phi_tilde|,bound 1/2^(m+1),error <= bound
+B13,4,|1110>,3,000,1.0,1.0,001,0.0,0.0,0.0,0.0,0.0625,True
