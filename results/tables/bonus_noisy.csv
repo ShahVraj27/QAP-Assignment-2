@@ -1,0 +1,5 @@
+Run,method,correct outcome(s),controlled-U blocks,transpiled depth,2-qubit gates,P(correct) ideal,P(correct) noisy,most likely y (noisy),TVD noisy vs ideal
+A9,repeat,101,7,124,81,1.0,0.311,101,0.689
+A9,angle,101,3,58,45,1.0,0.4424,101,0.5576
+A12,repeat,101 / 110,7,172,119,0.8211,0.354,110,0.4671
+A12,angle,101 / 110,3,69,54,0.8211,0.4233,110,0.3977

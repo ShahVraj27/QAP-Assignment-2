@@ -29,12 +29,14 @@ m = 1, 2 and 3 counting qubits. Every result is explained from the math.
 | 10 | Part C: non-eigenstates C1–C5, eigenstate decompositions, joint outcomes |
 | 11 | Part D: broken circuits D1–D6 and the D2+D3 combination |
 | 12 | inference essay |
-| 13 | deliverables checklist |
+| 13 | optional bonus: A9 and A12 on a noisy fake IBM backend, repetition vs angle multiplication |
+| 14 | deliverables checklist |
 
 ## Technologies
 
 - Python 3.11 or 3.12
 - Qiskit 2.x and Qiskit Aer 0.17 (`AerSimulator`)
+- qiskit-ibm-runtime (fake noisy backends for the bonus)
 - NumPy, pandas, Matplotlib (with `pylatexenc` for circuit drawings)
 - pytest for tests, Jupyter (VS Code) for the notebook
 
@@ -51,11 +53,13 @@ QAP-Assignment-2/
 │   ├── experiments.py        # Part A and Part B runners and result tables
 │   ├── part_c.py             # Part C: non-eigenstates, joint measurement
 │   ├── part_d.py             # Part D: broken-circuit variants D1–D6
+│   ├── bonus.py              # bonus: A9 and A12 on a noisy fake backend
 │   └── plotting.py           # side-by-side histograms
 ├── tests/
 │   ├── test_core.py          # sanity check, power-method equivalence, formula checks
 │   ├── test_part_a_b.py      # Part A predictions/results, Part B error bound
-│   └── test_part_c_d.py      # Part C distributions, Part D bug signatures
+│   ├── test_part_c_d.py      # Part C distributions, Part D bug signatures
+│   └── test_bonus.py         # bonus: noisy runs, depth comparison
 ├── notebooks/
 │   └── Assignment2_QPE.ipynb # the graded notebook
 ├── results/
@@ -93,9 +97,9 @@ From the project root with the virtual environment active:
 python -m pytest
 ```
 
-The suite has 118 tests covering the sanity check, the equivalence of the two
+The suite has 124 tests covering the sanity check, the equivalence of the two
 U^(2^k) methods, the analytic P(y) formula, every Part A/B result, the Part C
-distributions and the signature of every Part D bug.
+distributions, the signature of every Part D bug and the bonus noisy runs.
 
 ## Running the notebook
 
@@ -124,3 +128,5 @@ The notebook writes its figures to `results/figures/` and its tables to `results
 | 2 | Soumya Dedhia | Part A and Part B |
 | 3 | Vraj Shah | Part C and Part D |
 | 4 | Soumya Dedhia | inference essay, final README, PDF export |
+
+The optional bonus (Section 13) was added after Commit 4.

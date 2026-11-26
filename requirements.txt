@@ -1,5 +1,6 @@
 qiskit>=2.2,<3
 qiskit-aer>=0.17,<0.18
+qiskit-ibm-runtime>=0.40
 numpy>=1.26
 matplotlib>=3.8
 pylatexenc>=2.10
